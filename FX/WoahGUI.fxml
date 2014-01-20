@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<fx:root type="BorderPane" xmlns:fx="http://javafx.com/fxml" >
+	<top>
+		<VBox>
+			<children>
+				<MenuBar>
+					<menus>
+						<Menu text="WoahFX">
+							<items>
+								<MenuItem text="WoahBeendenFX" onAction="#onMenuExitAction"/>
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+			</children>
+		</VBox>
+	</top>
+	<center>
+		<GridPane fx:id="woahGrid" alignment="center" gridLinesVisible="true">
+			<padding>
+				<Insets bottom="20" left="-10" top="10"/>
+			</padding>
+			<rowConstraints>
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+			</rowConstraints>
+			<columnConstraints>
+				<ColumnConstraints/>
+				<ColumnConstraints/>
+				<ColumnConstraints/>
+			</columnConstraints>
+			<children>
+			</children>
+		</GridPane>
+	</center>
+	<bottom>
+		<HBox alignment="CENTER_RIGHT">
+			<children>
+				<Label fx:id="woahWin" HBox.hgrow = "ALWAYS"/>
+				<Button text="Neu" onAction="#init" />
+			</children>
+		</HBox>
+	</bottom>
+</fx:root>
